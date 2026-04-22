@@ -114,3 +114,24 @@ var myVar = 5;
 
 
 
+
+DATA TYPE IN JAVASCRIPT 
+
+//primitive datatypes
+
+1 : String 
+2 : number 
+3 : boolean 
+4 : undefined 
+5 : null
+6 : symbol
+7 : bigInt
+
+Object reference Types (NON-primitive);
+1 : Object 
+2 : Array
+3 : functions
+
+
+
+
