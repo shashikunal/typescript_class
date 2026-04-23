@@ -135,3 +135,70 @@ Object reference Types (NON-primitive);
 
 
 
+String 
+    Strings are useful for holding data that can be represented in text form
+
+let str = "shashi";
+let str1 = 'shashi1';
+
+//es6 => template string or literals
+let str3 = `shashi2 `
+
+
+Immutable concept in javascript?
+ immutability refers to data that cannot be changed after it is created. When you want to modify an immutable value, you must create a new copy with the updated information rather than altering the original. 
+
+ ALL Primitive data types in javascript are Immutable.
+ 
+
+ NUMBER data type
+ //64 bit floating point value => All numbers in js(integers and decimals) are same type that is number
+ 
+ In JavaScript, the Number data type is a primitive value used to represent both integers (whole numbers) and floating-point numbers (decimals). Unlike many other programming languages that have specific types for different kinds of numbers (like int, float, or double), JavaScript uses a single type for all of them. 
+
+
+ Boolean
+ A logical entity that can have only two values true , false
+
+ In JavaScript, a Boolean is a primitive data type that represents one of two values: true or false. It is the fundamental building block for logic, conditional testing, and control flow in your code. 
+
+
+ undefined data type?
+ A variable that has been declared but has not yet assigned a value and it is the defaulgt state of a variable 
+ global variable in js => global object => window object
+
+ syntax:
+ let x; //undefined data type
+
+
+ null data type 
+ null represents the intentional value that should be empty value or absence of any object value
+
+In JavaScript, null is a primitive data type that represents the intentional absence of any object value. It is one of the seven primitive types and is typically used to indicate that a variable is "empty" or should point to "nothing." 
+
+
+
+Object Reference Types (mutable)
+Array
+object 
+function 
+
+<!-- Array  --> 
+[] //array
+An array in JavaScript is a global object used to store multiple values in a single variable
+List store multiple values in a single variable 
+
+
+Objects (key and value pair) (JSON) => {} => object
+
+In JavaScript, an Object is a standalone entity that stores data as a collection of key-value pairs. It is one of the most fundamental data types in the language and is used to represent real-world entities (like a car or a person) by grouping related data and functionalities together. 
+syntax 
+let user = {
+    key : "data type"
+} 
+
+
+
+
+
+
