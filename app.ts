@@ -137,11 +137,11 @@
 
 // console.log(typeof x); //undefined
 
-let y; //undefined => not assigned
-let x = null; //here we have value that value is empty
+// let y; //undefined => not assigned
+// let x = null; //here we have value that value is empty
 
-console.log(x);
-console.log(typeof(x)); // bug in the javascript keep as it is.......
+// console.log(x);
+// console.log(typeof(x)); // bug in the javascript keep as it is.......
 
 //es6 
 // symbol 
@@ -199,13 +199,68 @@ console.log(typeof(x)); // bug in the javascript keep as it is.......
 // console.log(user)
 
 
-let employees = {
-    1 : "shashi",
-    2 : "mansi",
-    3 : "piyush",
-    for:"i am for but ",
+// let employees = {
+//     1 : "shashi",
+//     2 : "mansi",
+//     3 : "piyush",
+//     for:"i am for but ",
    
-}
+// }
 
-console.log(employees[1]);
-console.log(employees.for)
+// console.log(employees[1]);
+// console.log(employees.for)
+
+
+//define a function 
+//function declaration //naming function
+// function Demo(){
+//     console.log("Hello function");
+// }
+
+// let x = Demo();
+// console.log(x)
+
+//function expression
+//  let x = function(){
+// console.log("function expression or variable declaration function")
+// }
+
+// x()
+
+
+//! function declaration Hoisting with Example 
+
+// x() //hoisting
+// function x(){
+//     console.log("I am x with function declation synatx")
+// }
+
+//once declartion has been done then only can invoke it => line by line reads
+
+// When function hoisting is not working
+// if it is function expression or variable declaration function is not hoisted 
+
+// y();
+
+// let y = function(){
+//     console.log(`y is defined with function expression but is 
+//         not hoisted beacause this variabe
+//          declarion only variable is hoisted not function`)
+// }
+
+
+// IIFE function
+// (function(){
+//     console.log(`I am IIFE self execution function i
+//          dont want any support i can manage myself`)
+// })();
+
+// console.log(x)
+
+
+// var $ = "selenium"; //global scope
+// var $ = "playwright"; //playwright global scope 
+// console.log($);
+
+//IIFE
+(function(){})();

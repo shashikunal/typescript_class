@@ -197,6 +197,89 @@ let user = {
     key : "data type"
 } 
 
+functions
+    function is a block of resusable code written to perform a specific task
+
+    A function in JavaScript is a reusable block of code designed to perform a specific task. Instead of writing the same logic multiple times, you can wrap it in a function and "call" or "invoke" it whenever needed. 
+
+    In javascript we have builtin functions 
+    alert()
+    propmt()
+    confirm();
+    ...........
+
+    how to define function 
+    //function syntax in javascript / typescript
+
+    function Demo(){
+        //statements
+        //code here ....
+    }
+
+    Function keyword 
+    The name of the function 
+    parentheses(which can take parameter or empty)
+    body of the function (wrapped in curly braces)
+
+
+    what is Named function?
+    A named function in JavaScript is a function that is defined with a specific identifier (name) during its creation
+    example 
+            function Demo(){
+                console.log("hello world")
+            }
+
+            //invoking funtion Demo();
+
+ what is Anonymous function?
+    An Anonymous Function in JavaScript is a function that does not have a name or identifier. Unlike a standard function declaration (e.g., function myName() {}), anonymous functions are typically created as part of an expression and are used for one-time or short-term tasks. 
+
+    syntax : function(){
+            console.log("hello world);
+    }
+
+what is  function expression or variable declaration function ?
+    A Function Expression (sometimes called a variable declaration function) defines a function by assigning it to a variable or using it within an expression. These are not hoisted in the same way; the variable name may be hoisted, but the function itself is only available after the execution reaches that line. 
+    Syntax: Defined as part of a variable assignment (e.g., using const, let, or var).
+    Hoisting: Not hoisted. If you call it before the definition, you will get an error (a ReferenceError for const/let or a TypeError for var).
+
+    Syntax or example 
+    
+    let Demo = function(){
+        console.log("function expressions are here")
+    }
+
+    //invoke it with help of variabel that is Demo
+    Demo();
+
+
+    What is function Hoisted with function Declaration?
+    Function hoisting is a unique behavior in JavaScript where the interpreter appears to move function declarations to the top of their containing scope (either the global scope or a function's local scope) before the code is executed. This allows you to call a function before it is defined in your code. 
+
+    Function Declarations
+    Function declarations are fully hoisted. This means both the function's name and its entire body are stored in memory during the compilation phase, making the function available throughout the entire scope. 
+
+
+    Why function expression is not Hoisted?
+    Function Expressions
+    Function expressions (functions assigned to a variable) behave differently because they follow the rules of variable hoisting. Only the variable declaration is hoisted, not the function assignment itself. 
+    Using var: If you use var, the variable is hoisted and initialized as undefined. Calling it before the assignment line will result in a TypeError because undefined is not a function.
+
+
+    IIFE function
+    An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It is a common design pattern used to create a private scope and prevent variables from "leaking" into the global namespace. 
+
+1. Basic Syntax
+(function(){
+    console.log("hello");
+})();
+
+
+
+
+
+
+
 
 
 
