@@ -263,4 +263,152 @@
 // console.log($);
 
 //IIFE
-(function(){})();
+// (function(){})();
+
+// function Demo(a){
+//     console.log(a);
+//     console.log("Datatype of" , typeof a)
+// }
+
+// Demo("shashi")
+// console.log(a)
+
+//function with parameter or function with variable inside ();
+// function Demo(a , b){
+//     console.log(a + b);
+// }
+
+// Demo(10 , 20); //20
+
+// (function(a , b ,c){
+//     console.log("Am a " , a);
+//     console.log("I am B " , b);
+//     console.log("I am c " , c)
+// })("Shashi" , "Piyush" , "varshini");
+//  console.log("i am shahsi")
+
+// function Add(a , b){
+//   return  a+b; //final result undefined
+// }
+
+// let addition = Add(2 , 2);
+// console.log(addition);
+
+
+// function Demo(a){
+//      a; 
+//     let x = 10;
+//     console.log(x);
+//     return a;//final result
+
+// }
+
+
+//normal function expression
+
+// let x = function(a){
+//     return a;
+// }
+
+// //Arrow function way to write function 
+
+// let y = (a)=>{
+//     return a;
+// }
+
+
+// function x(a){
+//     return a
+// }
+
+// //convert normal function into arrow function 
+
+// x(a)=>{
+//    console.log("hello") ;
+//    return a;
+// } //Uncaught SyntaxError: Illegal return statement (at app.js:229:5)
+
+
+// CONCISE
+//normal function expression
+// const App = function(a){
+//     return a
+// };
+
+// console.log(App(10))
+
+//convert normal function expression into Arrow function with Implicit return
+
+// const App1 = (a)=>  a; //if one line of body dont reuired {} as well return keyword
+// console.log(App1(10))
+
+// const AllSeleniumTrainer = (course) =>{
+//     return course;
+// }; //right
+
+// const AllWebTrainer = (course) => course; //concise no return and {}
+
+// let  TakeExample = function (a , b){
+// return a + b;
+// }
+
+// //arrow function without concise code 
+// let TakeExample1 = (a , b) =>{
+//     return a +b;
+// }
+
+// //arrow function with concise code 
+
+// let TakeExampleWithConcise = (a , b) => a+b;
+
+
+// // let x = a => a;
+
+// const y = a => a;
+// console.log(y(10));
+
+// const z =  ()=> "shashi";
+// console.log(z())
+
+
+// export {}
+
+
+// let courses = function(coursename , trainer , duration){
+//     let x = {coursename , trainer , duration};
+//      return x;
+// }
+
+// let result = courses("playwright" , "shashi" , 30);
+// console.log(result);
+
+
+// convert Arrow function with Implicit return
+
+// code block (if , for , function {}); //block 
+// even object literal also uses {} //object
+
+// let x = {
+//     key : value //property
+
+// } //object literal
+
+// {
+//  statement
+// }//block
+
+//Implicit with Object becarefull that treats as block not object
+
+
+//Explicit return an object with arrow function because we are using return keyword
+const AllTrainers = (trainerName , city , course) => { return {trainerName , city , course}};
+
+//This below line of code is Implicit return with object
+const AllTrainersWithImlicitwithObject = (trainerName , city , course) =>({trainerName , city , course});
+
+console.log(AllTrainers("shashi" , 'mandya' , "selenium"));
+
+console.log(AllTrainersWithImlicitwithObject("dixith" , "bangalore" , "java"));
+
+
+

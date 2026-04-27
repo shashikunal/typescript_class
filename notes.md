@@ -278,10 +278,69 @@ what is  function expression or variable declaration function ?
 
 
 
+Function parameter?
+    In JavaScript, parameters are placeholders defined in a function declaration, allowing it to receive input values (called arguments) to perform specific tasks. 
 
 
+    1. Basic Syntax
+    You list parameters inside the parentheses when declaring a function. You can pass values into these parameters when calling (invoking) the function. 
+    javascript
+    // 'name' is the parameter
+    function greet(name) {
+    console.log("Hello, " + name + "!");
+    }
+
+    // "Alice" and "Bob" are the arguments
+    greet("Alice"); // Output: Hello, Alice!
+    greet("Bob");   // Output: Hello, Bob!
+
+    function Demo(a){
+        console.log(a)
+    }
+
+    Demo(10)
 
 
+Return keyword
 
+Use return to specify the value that the function should produce as a final result. When the interpreter reaches a return statement, the function that contains that statement immediately ends, and the specified value is returned to the context where the function was called:
+
+example:
+function add(a , b){
+    return a+ b; //return statement produce final result  4
+};
+
+add(2, 2);
+
+
+ARROW function(es6) => Concise 
+Arrow functions (fat Arrow function) in javascript or typescript are a concise way
+to write Anonymouse function expression. 
+concise way to write javscript function
+
+synatx 
+
+funtion(){
+
+}
+
+//arrow way to define a function:
+()=>{
+
+}
+
+CONCISE //
+
+let Demo = function(a){
+    return a; //one line
+   
+}
+
+
+Concept of Implicit return 
+
+Arrow function with Implicit return
+if one line of block(body of the function) dont required {}
+let Demo1 = () =>   a;
 
 
